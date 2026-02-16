@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Ultimate College Life Web Page</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/myphoto.jpg" alt="Neil Carl C. Gojit" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Neil Carl C. Gojit">Neil Carl C. Gojit</h1>
+
+          <p class="title">Computer Science Student</p>
+        </div>
+
+        <!-- Show Routine Button -->
+        <button class="info_more-btn" onclick="toggleRoutine()">
+          <span>Show Routine</span>
+          <ion-icon name="chevron-down" id="chevron-icon"></ion-icon>
+        </button>
+
+      </div>
+
+      <!-- Hidden Routine Section -->
+      <div id="routine-section" class="sidebar-info_more" style="display: none;">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="contact-info">
+              <p class="contact-title">Daily Routine</p>
+            </div>
+          </li>
+          <li class="contact-item">6:30 AM – Wake up and get ready</li>
+          <li class="contact-item">7:00 AM – Breakfast and social media scroll</li>
+          <li class="contact-item">8:00 AM – 12:00 PM – Classes and lectures</li>
+          <li class="contact-item">12:00 PM – 1:00 PM – Lunch and chat with friends</li>
+          <li class="contact-item">1:00 PM – 5:00 PM – More classes, library work, or group projects</li>
+          <li class="contact-item">5:00 PM – 6:00 PM – Exercise or walk</li>
+          <li class="contact-item">6:00 PM – 8:00 PM – Dinner and relaxation</li>
+          <li class="contact-item">8:00 PM – 11:00 PM – Study time, assignments, or hobbies</li>
+          <li class="contact-item">11:30 PM – Sleep</li>
+        </ul>
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello! My name is Neil Carl C. Gojit. I am a college student with a passion for learning, coding, and exploring new technologies. I enjoy problem-solving, challenging myself, and growing both academically and personally.
+          </p>
+
+          <p>
+            In my free time, I like reading, listening to music, and reflecting on life. I also value participating in community and cultural activities, which allow me to connect with others and make a positive impact.
+
+            Fun fact: I am deeply interested in spiritual growth and Ignatian spirituality, which guides me to stay mindful and purposeful in everything I do.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Hobbies</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/basketball.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Play Basketball</h4>
+
+                <p class="service-item-text">
+                  Basketball is my main sport and I love it as a physical activity.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/games.svg" alt="Playing Online Games" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Playing Games</h4>
+
+                <p class="service-item-text">
+                  This is what I do when I'm tired of coding.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/video.svg" alt="Watching Movies" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Watching Movies</h4>
+
+                <p class="service-item-text">
+                  I watch movies when I know its long weekends/vacation.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/music.svg" alt="Listening to Music" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Listening to Music</h4>
+
+                <p class="service-item-text">
+                  I like to listen to music when I'm overwhelmed or stressed.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - College Must-Haves
+        -->
+
+        <section class="college-must-haves">
+
+          <h3 class="h3 college-must-haves-title">College Must-Haves</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/laptop.svg" alt="Laptop" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Laptop</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   My ultimate study buddy; all my assignments, research, and notes live here.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/coffee.svg" alt="Coffee" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Coffee</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   My lifesaver for early mornings and long study sessions.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/headphones.svg" alt="Headphones" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Headphones</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                   Perfect for blocking distractions and getting in the zone with music.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/clipboard.svg" alt="Pen and Paper" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Pen and Paper</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    For jotting down ideas, reminders, or random bursts of inspiration.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - Accomplishments
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Accomplishments</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/p2.jpg" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/p3.jpg" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/p4.jpg" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/P9.jpg" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
